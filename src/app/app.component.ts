@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppUpdatesService } from './shared/services/service-worker/app-updates.service';
 
 @Component({
   selector: 'eod-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'byeod';
+  title = 'byEod';
+  /**
+   *
+   */
+  constructor(private appUpdatesService: AppUpdatesService) {
+  }
 }
